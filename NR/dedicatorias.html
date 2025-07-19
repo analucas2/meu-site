@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dedicatórias</title>
+  <link rel="stylesheet" href="dedicatorias.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+  <header class="header">
+    <h1 class="logo">SATURN</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="trajetoria.html">TRAJETÓRIA</a></li>
+        <li><a href="galeria.html">GALERIA</a></li>
+        <li><a href="dedicatorias.html" class="active">DEDICATÓRIAS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dedicatorias-container">
+    <h2>Com amor, fãs.</h2>
+    <form id="form">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <textarea id="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="mensagens"></div>
+  </main>
+
+  <script src="dedicatorias.js"></script>
+</body>
+</html>
