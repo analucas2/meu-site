@@ -1,0 +1,171 @@
+/* cabeçalho idêntico ao do index */
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #2d1f1a;
+  color: #f5f0ec;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #f5f0ec;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #f5f0ec;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.menu li a:hover {
+  transform: scale(1.08);
+}
+
+.menu li a.active {
+  background: #3d2b1f;
+  color: #ffdddd;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* --- Abaixo pode vir o CSS específico da galeria, se quiser --- */
+
+
+
+
+.menu li a:hover {
+  transform: scale(1.08);
+}
+
+.menu li a.active {
+  background: #3d2b1f;
+  color: #ffdddd;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+
+
+.galeria {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.galeria h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #f4d7bd;
+  margin-bottom: 40px;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.faixa {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  max-width: 85%;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 300px;
+  background: #3b261c;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.item:hover {
+  transform: scale(1.03);
+}
+
+.item p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.item a {
+  display: inline-block;
+  background-color: #deb38a;
+  color: #2d1d17;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.item a:hover {
+  background-color: #c89e79;
+}
+
+.seta {
+  background: none;
+  border: none;
+  color: #deb38a;
+  font-size: 36px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.seta:hover {
+  transform: scale(1.2);
+}
+
+.botao-inicio {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #deb38a;
+  color: #2d1d17;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.botao-inicio:hover {
+  background-color: #cba27f;
+}
+
+/* Ocultar scrollbar */
+.faixa::-webkit-scrollbar {
+  display: none;
+}

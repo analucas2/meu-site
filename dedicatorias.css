@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #2d1f1a;
+  color: #f5f0ec;
+}
+
+/* Cabeçalho idêntico ao index */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+.logo {
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #f5f0ec;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem; /* tamanho um pouco maior que o padrão, mas não exagerado */
+  margin: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #f5f0ec;
+  font-size: 14.5px; /* leve aumento para parecer igual ao index */
+  transition: transform 0.3s;
+  display: inline-block;
+  padding: 4px 14px; /* espaçamento semelhante ao index */
+  border-radius: 20px;
+  font-weight: 500; /* peso intermediário */
+}
+
+
+.menu li a:hover {
+  transform: scale(1.08);
+}
+
+.menu li a.active {
+  background: #3d2b1f;
+  color: #ffdddd;
+}
+
+.dedicatorias-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, #513112, #6d4b3e);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(80, 55, 40, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  font-family: inherit;
+  padding: 0.8rem;
+  border: 1px solid #0f0606;
+  border-radius: 8px;
+  resize: none;
+  background: #3d2b1f;
+  color: #f5f0ec;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #bba788;
+}
+
+button {
+  background: #8d6e63;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #5d4037;
+}
+
+#mensagens {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mensagem {
+  background: linear-gradient(135deg, #bba788, #a1887f);
+  padding: 1rem;
+  border-left: 6px solid #8d6e63;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.mensagem h3 {
+  margin: 0;
+  font-weight: 700;
+  color: #3d2b1f;
+}
+
+.mensagem p {
+  margin: 0.5rem 0 0;
+  color: #3e2723;
+  white-space: pre-wrap; /* mantém quebras de linha */
+}
+
+.actions {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  color: #6d4c41;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.actions button:hover {
+  color: #3d2b1f;
+}
+
+.actions svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
